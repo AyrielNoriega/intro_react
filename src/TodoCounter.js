@@ -7,4 +7,4 @@ function TodoCounter() {
     );
 }
 
-export default TodoCounter;
+export {TodoCounter};
