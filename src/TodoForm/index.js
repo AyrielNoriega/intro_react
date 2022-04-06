@@ -24,6 +24,7 @@ function TodoForm(params) {
         <form onSubmit={onAddTodo}>
             <label for="contenido">Contenido del Todo</label>
             <textarea
+                className="form-control"
                 id="contenido"
                 value={newTodoValue}
                 onChange={onChange}
