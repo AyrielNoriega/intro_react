@@ -22,16 +22,17 @@ function TodoForm(params) {
     }
     return (
         <form onSubmit={onAddTodo}>
-            <label for="contenido">Contenido</label>
+            <label for="contenido">Contenido del Todo</label>
             <textarea
                 id="contenido"
                 value={newTodoValue}
                 onChange={onChange}
-                placeholder="Ingresa tu info"
+                placeholder="Ingresa tu Todo"
             />
 
-            <div>
+            <div className="TodoForm-buttonContainer">
                 <button
+                    className="btn btn-warning"
                     type="button"
                     onClick={onCancel}
                 >
@@ -39,6 +40,7 @@ function TodoForm(params) {
                 </button>
 
                 <button
+                    className="btn btn-success"
                     type="submit"
                 >
                     Anadir
